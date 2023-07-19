@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <title>Books</title>
+      <link
+         href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+         rel="stylesheet"
+         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+         crossorigin="anonymous"
+      />
+   </head>
+   <body>
+      <header>
+         <nav class="navbar navbar-dark bg-primary">
+            <span class="navbar-brand mb-0 h1">Books</span>
+            <!-- Default dropstart button -->
+            <div class="btn-group dropstart">
+               <button
+                  type="button"
+                  class="btn btn-secondary dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+               >
+                  <svg
+                     xmlns="http://www.w3.org/2000/svg"
+                     width="16"
+                     height="16"
+                     fill="currentColor"
+                     class="bi bi-person-circle"
+                     viewBox="0 0 16 16"
+                  >
+                     <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                     <path
+                        fill-rule="evenodd"
+                        d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"
+                     />
+                  </svg>
+               </button>
+               <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">User</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li><a class="dropdown-item" href="#">Logout</a></li>
+               </ul>
+            </div>
+         </nav>
+      </header>
+      <main class="container">
+         <div class="row">
+            <div class="col-12">
+               <div class="card">
+                  <div class="card-header">
+                     <h5 class="card-title">Input Buku</h5>
+                  </div>
+                  <div class="card-body">
+                     <div class="form-group">
+                        <label for="inputBookId">ID Buku</label>
+                        <input
+                           id="inputBookId"
+                           type="number"
+                           class="form-control"
+                           placeholder="ID Buku"
+                        />
+                     </div>
+                     <div class="form-group">
+                        <label for="inputBookTitle">Judul Buku</label>
+                        <input
+                           id="inputBookTitle"
+                           type="text"
+                           class="form-control"
+                           placeholder="Judul Buku"
+                        />
+                     </div>
+                     <div class="form-group">
+                        <label for="inputBookAuthor">Pengarang</label>
+                        <input
+                           id="inputBookAuthor"
+                           type="text"
+                           class="form-control"
+                           placeholder="Pengarang"
+                        />
+                     </div>
+                     <div class="form-group">
+                        <label for="inputBookuser_id">User ID</label>
+                        <input
+                           id="inputBookuser_id"
+                           type="text"
+                           class="form-control"
+                           placeholder="USER ID"
+                        />
+                     </div>
+                     <div class="form-group">
+                        <label for="inputBookisbn">ISBN</label>
+                        <input
+                           id="inputBookisbn"
+                           type="text"
+                           class="form-control"
+                           placeholder="ISBN"
+                        />
+                     </div>
+                     <div class="form-group">
+                        <label for="inputBooksubtitle">Subtitle</label>
+                        <input
+                           id="inputBooksubtitle"
+                           type="text"
+                           class="form-control"
+                           placeholder="Subtitle"
+                        />
+                     </div>
+                     <div class="form-group">
+                        <label for="inputBookpublished">Published</label>
+                        <input
+                           id="inputBookpublished"
+                           type="text"
+                           class="form-control"
+                           placeholder="Published"
+                        />
+                     </div>
+                     <div class="form-group">
+                        <label for="inputBookpublisher">Publisher</label>
+                        <input
+                           id="inputBookpublisher"
+                           type="text"
+                           class="form-control"
+                           placeholder="Publisher"
+                        />
+                     </div>
+                     <div class="form-group">
+                        <label for="inputBookpages">Pages</label>
+                        <input
+                           id="inputBookpages"
+                           type="text"
+                           class="form-control"
+                           placeholder="Pages"
+                        />
+                     </div>
+                     <div class="form-group">
+                        <label for="inputBookdescription">Description</label>
+                        <input
+                           id="inputBookdescription"
+                           type="text"
+                           class="form-control"
+                           placeholder="Description"
+                        />
+                     </div>
+                     <div class="form-group">
+                        <label for="inputBookwebsite">Website</label>
+                        <input
+                           id="inputBookwebsite"
+                           type="text"
+                           class="form-control"
+                           placeholder="Website"
+                        />
+                     </div>
+                     <div class="form-group">
+                        <button id="buttonSave" class="btn btn-success">
+                           Save
+                        </button>
+                        <button id="buttonUpdate" class="btn btn-primary">
+                           Update
+                        </button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <div id="listBook" class="row"></div>
+      </main>
+      <script
+         src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+         crossorigin="anonymous"
+      ></script>
+   </body>
+</html>
