@@ -7,13 +7,13 @@ Buka Terminal / Git Bash
 1. Clone Repository ini
 
 ```bash
-    git clone https://github.com/erziealdrian02/weatherwithus.git
+    https://github.com/erziealdrian02/API_BooksReader.git
 ```
 
-2. Masuk ke Folder WeatherWithUs
+2. Masuk ke Folder Tujuan
 
 ```bash
-    cd WeatherWithUs
+    cd API_BooksReader
 ```
 
 3. Install Dependencies
@@ -22,13 +22,13 @@ Buka Terminal / Git Bash
     $ npm install
 ```
 
-4. Build App Weather With Us
+4. Build App
 
 ```bash
     $ npm run build
 ```
 
-5. Jalankan Dalam mode Development di localhost:9000
+5. Jalankan Dalam mode Development di localhost:8080
 
 ```bash
     $ npm run start-dev
